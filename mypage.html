@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mypage.css">
+    <script src="js/scripts.js" defer></script>
+    <script src="js/mypage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Custom Css Cursor-->
+    <div class="custom-cursor"></div>
+    <header>
+        <div id="navigation"></div>
+    </header>
+    <main>
+        <div class="moving-buttonContainer">
+            <button class="moving-button hover-target" 
+                    data-gif1="animation/idle_shark_blink.gif" 
+                    data-gif2="animation/music_shark.gif" 
+                    data-audio="sounds/ElevatorMusic.wav">
+                <img class="gif" src="animation/idle_shark_blink.gif" alt="Idle Shark">
+                <audio class="audio" src="sounds/ElevatorMusic.wav" type="audio/wav" loop></audio>
+            </button>
+            <button class="moving-button hover-target" 
+                    data-gif1="animation/curly guy 64 x 64 idle v3.gif" 
+                    data-gif2="animation/curly guy 64 x 64 walk v2.gif" 
+                    data-audio="sounds/New Soul City.mp3">
+                <img class="gif" src="animation/curly guy 64 x 64 idle v3.gif" alt="Idle Walker">
+                <audio class="audio" src="sounds/New Soul City.mp3" type="audio/wav" loop></audio>
+            </button>
+        </div>        
+    </main>
+    <footer id="footer"></footer>
+</body>
+</html>

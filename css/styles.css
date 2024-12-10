@@ -1,0 +1,169 @@
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    cursor: none;
+}
+/*Navigation Styles*/
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+#navigation{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#navigation a{
+  text-decoration: none;
+  color: #f4f4f4;
+}
+.Nav-item{
+  display:flex;
+  list-style: none;
+}
+.Nav-item li{
+  padding: 20px;
+}
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+/*Cursor styles*/
+    /* Custom cursor style */
+    .custom-cursor {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        pointer-events: none; /* Prevent cursor from interacting with elements */
+        z-index: 9999; /* Ensure the cursor stays on top */
+        transform: translate(-50%, -50%); /* Center the cursor */
+        transition: all 0.1s ease; /* Smooth cursor movement */
+      }
+      .custom-cursor.hovered {
+        background-color: blue; /* Change color when hovering */
+        transform: scale(1.5); /* Increase size on hover */
+    }
+
+/* Footer container styling */
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+}
+.footer-links{
+  color:white;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Footer card styling */
+  .footer-card {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  /*Contact Info Styling card */
+  .contact-info{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .contact-info p{
+    padding: 0;
+  }
+  
+  /* Newsletter input styling */
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  .newsletter-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-subscribe {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+/* Social media icons */
+.social-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .social-links {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 10px;
+  }
+
+/* End of Footer container styling */
+/*Special pickline h1 tag for styling*/
+.pickline{
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+  font-size: 1.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  /*Contact Me Respoinsive styles*/
+    #styled-form {
+        padding: 15px;
+    }
+    .form-input, .form-textarea {
+        font-size: 14px;
+    }
+    .form-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .Contact-Container{
+        flex-direction: column-reverse;
+    }
+    /*Aboutme Responsive Styles*/
+    .About-Container{
+      flex-direction: column;
+    }
+}

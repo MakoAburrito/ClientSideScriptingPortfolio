@@ -1,0 +1,29 @@
+/*Singing Shark on Scroll*/
+.moving-buttonContainer{
+    display: flex;
+    padding: 20px 0px;
+}
+.moving-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    display: block;
+    animation: moveUpDown 1s ease-in-out infinite alternate;
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.moving-button img{
+    height: 150px;
+    width: 150px;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
